@@ -27,9 +27,6 @@ Sure! Here are the definitions for each function and class in the provided code:
    - `inputs(self, key, index)`: Handles user input for a specific data field and calls the appropriate validation method.
    - `addingDataToCsv(self, file_exists, user_account, fieldnames)`: Adds the user account details to the user details CSV file.
 
-It's worth noting that the provided code is incomplete, and some parts are missing or truncated. The definitions provided above are based on the available code, but there might be additional functionality or implementation details not present in the provided snippet.
-
-Apologies for the confusion. Let me provide you with definitions for the missing methods:
 
 1. `create_account(self)` method:
    - This method is responsible for creating a new bank account for a user.
@@ -57,4 +54,4 @@ Apologies for the confusion. Let me provide you with definitions for the missing
    - This method prompts the user to choose whether to continue using the banking system or exit the program.
    - It takes user input and returns `True` if the user wants to continue or `False` if the user chooses to exit.
 
-Please note that the actual implementation of these methods might vary depending on the specific requirements and design choices. The definitions provided here are based on the general understanding of the missing functionality.
+Please note that the actual implementation of these methods might vary depending on the specific requirements and design choices. The definitions provided here are based on the general understanding of the functionality.
