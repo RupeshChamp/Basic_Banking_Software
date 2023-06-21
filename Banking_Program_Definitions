@@ -1,0 +1,60 @@
+Sure! Here are the definitions for each function and class in the provided code:
+
+1. `EMI_Calculator` class:
+   - This class represents an EMI (Equated Monthly Installment) calculator.
+   - It is inherited by the `BankingSystem` class, indicating that the `BankingSystem` class has access to the EMI calculation functionality.
+
+2. `BankingSystem` class:
+   - This class represents the main banking system and contains various methods to perform banking operations.
+   - It inherits from the `EMI_Calculator` class, which means it has access to the EMI calculation functionality.
+   - The class constructor initializes instance variables and sets up file paths for storing user details and other data.
+
+   Class Methods:
+   - `account_exist(self, accountNumber)`: Checks if an account number already exists in the user details CSV file.
+   - `validate_phone_number(phone_number)`: Validates a phone number to ensure it consists of only digits.
+   - `get_phone_number_from_csv(self)`: Retrieves all phone numbers from the user details CSV file and returns them as a list.
+   - `get_account_number(self, phone_number)`: Retrieves the account number associated with a given phone number from the user details CSV file.
+   - `calculate_age(dob)`: Calculates the age based on the provided date of birth.
+   - `get_current_balance(self, accNumber)`: Retrieves the current balance for a given account number from the user details CSV file.
+   - `update_user_details(self, account_number, updating_column, value)`: Updates a specific column value in the user details CSV file for a given account number.
+   - `update_amount(self, accountNumber, Initial_Account_Balance)`: Updates the amount column in the user details CSV file for a given account number.
+   - `folder_creation(self)`: Creates a "Banking" folder on the desktop and returns the path.
+   - `create_user_detail_folder(self)`: Creates a "UserDetails" folder inside the "Banking" folder and returns the path.
+   - `index(self)`: Displays the main menu and handles user input for various banking operations.
+   - `display_account(self, account)`: Displays the account details for a given account number.
+   - `validate(self, key, val, index)`: Validates the user input based on the specified key (data field).
+   - `userinput(self)`: Collects user input for creating a new account and validates the inputs.
+   - `inputs(self, key, index)`: Handles user input for a specific data field and calls the appropriate validation method.
+   - `addingDataToCsv(self, file_exists, user_account, fieldnames)`: Adds the user account details to the user details CSV file.
+
+It's worth noting that the provided code is incomplete, and some parts are missing or truncated. The definitions provided above are based on the available code, but there might be additional functionality or implementation details not present in the provided snippet.
+
+Apologies for the confusion. Let me provide you with definitions for the missing methods:
+
+1. `create_account(self)` method:
+   - This method is responsible for creating a new bank account for a user.
+   - It prompts the user to enter various details such as name, phone number, date of birth, and initial deposit amount.
+   - It validates the user inputs, generates a unique account number, and saves the account details to the user details CSV file.
+   - If the account creation is successful, it displays the newly created account details.
+
+2. `transaction(self, account_number)` method:
+   - This method allows a user to perform a transaction on their bank account.
+   - It prompts the user to choose between deposit and withdrawal options.
+   - For a deposit, it prompts the user to enter the deposit amount and updates the account balance accordingly.
+   - For a withdrawal, it prompts the user to enter the withdrawal amount and verifies if sufficient balance is available.
+   - It updates the account balance and saves the updated details to the user details CSV file.
+
+3. `edit_account(self, account_number)` method:
+   - This method allows a user to edit their account details.
+   - It prompts the user to choose between different options like name, phone number, or address to edit.
+   - Based on the user's choice, it prompts for the new value and updates the corresponding field in the user details CSV file.
+
+4. `display_account(self, account_number)` method:
+   - This method displays the account details for a given account number.
+   - It retrieves the account details from the user details CSV file and presents them to the user.
+
+5. `continue_or_exit(self)` method:
+   - This method prompts the user to choose whether to continue using the banking system or exit the program.
+   - It takes user input and returns `True` if the user wants to continue or `False` if the user chooses to exit.
+
+Please note that the actual implementation of these methods might vary depending on the specific requirements and design choices. The definitions provided here are based on the general understanding of the missing functionality.
